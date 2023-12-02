@@ -1,0 +1,2 @@
+https://a-gulinsky.github.io/goit-react-hw-05-movies/
+https://a-gulinsky.github.io/goit-react-hw-05-movies/movies
