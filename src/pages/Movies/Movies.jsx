@@ -6,6 +6,7 @@ import { useLocation, useSearchParams } from "react-router-dom"
 
 // emotion
 import { Container, Ul, LinkStyled } from "./Movies.styled"
+import { Helmet } from "react-helmet"
 
 const Movies = () => {
 
@@ -45,23 +46,29 @@ const Movies = () => {
   }, [query])
 
   return (
-    <Container>
+    <>
+      <Helmet>
+        <title>Movies</title>
+      </Helmet>
 
-      <form onSubmit={handleOnSubmit}>
-        <input type="text" name="input" />
+      <Container>
+
+        <form onSubmit={handleOnSubmit}>
+          <input type="text" name="input" />
         
-        <button type="submit">Search</button>
-      </form>
+          <button type="submit">Search</button>
+        </form>
 
-      <Ul>
-        {movies.map(movie => (
-          <li key={movie.id}>
+        <Ul>
+          {movies.map(movie => (
+            <li key={movie.id}>
 
-            <LinkStyled to={`/movies/${movie.id}`} state={{from: location}}>{movie.title}</LinkStyled>
-          </li>
-        ))}
-      </Ul>
-    </Container>
+              <LinkStyled to={`/movies/${movie.id}`} state={{from: location}}>{movie.title}</LinkStyled>
+            </li>
+          ))}
+        </Ul>
+      </Container>
+    </>
   )
 }
 

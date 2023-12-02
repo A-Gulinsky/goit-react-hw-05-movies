@@ -31,7 +31,7 @@ const Home = () => {
     <>
       <Helmet>
         <title>Title | Home Page</title>
-        <meta property="og:url" content="https://a-gulinsky.github.io/goit-react-hw-05-movies" />
+        <meta property="og:url" content="https://a-gulinsky.github.io/goit-react-hw-05-movies/" />
         <meta property="og:title" content="Title | Movie Page" />
         <meta property="og:site_name" content="Movies" />
         <meta property="og:type" content="article" />
