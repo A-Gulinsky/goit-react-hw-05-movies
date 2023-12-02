@@ -6,7 +6,6 @@ import { useLocation } from "react-router-dom"
 
 // emotion
 import { Title, Ul, LinkStyled } from "./Trends.styled"
-import { Helmet } from "react-helmet"
 
 const Trends = () => {
 
