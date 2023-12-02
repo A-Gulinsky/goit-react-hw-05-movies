@@ -32,7 +32,7 @@ const Trends = () => {
       <Helmet>
         <title>Title | Home Page</title>
         <meta property="og:url" content="https://a-gulinsky.github.io/goit-react-hw-05-movies" />
-        <meta property="og:title" content="Title | Movie Page" />
+        <meta property="og:title" content="Title | Home Page" />
         <meta property="og:site_name" content="Movies" />
         <meta property="og:type" content="article" />
         <meta property="og:description" content="Description: Best Movie in Ukraine 2. Best Movie in Ukraine 3. Best Movie in Ukraine" />
